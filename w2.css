@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: "微軟正黑體";
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+    padding: 8px 0;
+    color: black;
+    text-decoration: none !important; /* 去除底線 */
+  }
+  
+  .nav-link:hover {
+    color: #555;
+  }
+  
+  .instagram-logo {
+    font-family: 'Pacifico', cursive;
+  }
+  
+  .sidebar {
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  .rounded-circle {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    padding: 2px;
+  }
+  
+  .post img {
+    border-radius: 10px;
+  }
+  
