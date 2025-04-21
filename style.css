@@ -1,57 +1,44 @@
-*{
-	margin: 0;
-	padding: 0;
-	letter-spacing: 1px;
-	font-family: "微軟正黑體";
-	position: relative;
-    /* border: 1px solid #000; */
-}
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: "微軟正黑體";
+    box-sizing: border-box;
+  }
 
-h1{
-    text-align: center;
-    padding: 10px;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-.form-box {
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    background: linear-gradient(to top left, #94d2f5, #dcc4ff, #f3faff);
-}
-input, textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-.flex-row {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-button {
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .nav-link {
     font-size: 18px;
-    padding: 10px;
-    background-color: #7e89fe;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-button:hover {
-    color: #7e89fe;
-    border: 2px solid #7e89fe;
+    padding: 8px 0;
+    color: black;
+    text-decoration: none !important; /* 去除底線 */
+  }
+  
+  .nav-link:hover {
+    color: #555;
+  }
+  
+  .instagram-logo {
+    font-family: 'Pacifico', cursive;
+  }
+  
+  .sidebar {
+    min-height: 100vh;
     background-color: #fff;
-    transition: 0.5s;
-}
+  }
+  
+  .rounded-circle {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    padding: 2px;
+  }
+  
+  .post img {
+    border-radius: 10px;
+  }
+  
