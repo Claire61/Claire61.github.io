@@ -1,0 +1,83 @@
+/* 泡泡動畫 */
+@keyframes bubbleMove {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-30px) translateX(20px); }
+    100% { transform: translateY(0) translateX(0); }
+  }
+  
+  /* 淡入動畫 */
+  @keyframes fade-in {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* 浮動動畫 */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1.2s ease-out forwards;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* 泡泡：清楚可見的小圓圈 */
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #f9a8d4;
+    box-shadow: 1px 2px 5px rgba(129, 129, 129, 0.584);
+    opacity: 0.2;
+    animation: bubbleMove 30s infinite alternate ease-in-out;
+  }
+  
+  .bubble-1 { width: 100px; height: 100px; bottom: 10%; left: 15%; animation-delay: 0s; }
+  .bubble-2 { width: 60px; height: 60px; top: 5%; right: 15%; animation-delay: 2s; }
+  .bubble-3 { width: 140px; height: 140px; top: 40%; left: 50%; animation-delay: 4s; }
+  .bubble-4 { width: 50px; height: 50px; bottom: 25%; right: 25%; animation-delay: 1s; }
+  .bubble-5 { width: 80px; height: 80px; top: 20%; left: 20%; animation-delay: 3s; }
+  .bubble-6 { width: 40px; height: 40px; bottom: 30%; left: 70%; animation-delay: 5s; }
+  .bubble-7 { width: 90px; height: 90px; top: 70%; right: 30%; animation-delay: 6s; }
+  .bubble-8 { width: 70px; height: 70px; top: 60%; left: 10%; animation-delay: 1.5s; }
+  
+  /* 技能標籤 */
+  /* .skill-tag {
+    @apply px-3 py-1 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold transition duration-300;
+  } */
+  .skill-tag:hover {
+    background-color: #f9cbdc;
+    box-shadow: 0 0 8px #f9a8d4;
+  }
+  
+  /* 社群圖示動畫 */
+  .social-icon {
+    transition: transform 0.5s;
+  }
+  .social-icon:hover {
+    transform: scale(1.2) rotate(5deg);
+  }
+  
+  /* 按鈕 Ripple 效果 */
+  .ripple-button {
+    position: relative;
+    overflow: hidden;
+  }
+  .ripple-button::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 9999px;
+    transform: scale(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 1s;
+  }
+  .ripple-button:active::after {
+    transform: scale(4);
+    opacity: 0;
+    transition: 0s;
+  }
+  
